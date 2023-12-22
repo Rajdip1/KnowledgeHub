@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7">
+
+    <TextView
+        android:id="@+id/txCircle1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_view_circle"
+        android:backgroundTint="#BD80ED"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Python"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txCircle2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_view_circle"
+        android:backgroundTint="#BD80ED"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Maths"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txCircle3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_view_circle"
+        android:backgroundTint="#BD80ED"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Unix tools"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txCircle4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_view_circle"
+        android:backgroundTint="#BD80ED"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Data"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</LinearLayout>
