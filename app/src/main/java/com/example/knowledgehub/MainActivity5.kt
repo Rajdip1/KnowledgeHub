@@ -18,4 +18,3 @@ class MainActivity5 : ComponentActivity() {
         setContentView(R.layout.activity_main5)
     }
 }
-
