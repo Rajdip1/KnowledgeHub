@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EBD358"
+    android:background="@drawable/main_bg"
     tools:context=".MainActivity">
 
 
@@ -17,7 +17,8 @@
         android:textStyle="bold"
         android:textSize="30dp"
         android:layout_gravity="center"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="170dp"
+        android:textColor="@color/white"
         android:text="Welcome To KnowledgeHub" />
 
     <Button
@@ -26,29 +27,30 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bg"
         android:layout_gravity="center"
         android:layout_marginTop="90dp"
         android:text="Let's Go" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardContact"
-        android:backgroundTint="@color/purple_200"
-        android:layout_width="190dp"
+        android:layout_width="186dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        app:cardCornerRadius="50dp"
         android:layout_marginTop="100dp"
-        >
+        android:backgroundTint="#F3F05C"
+        app:cardCornerRadius="40dp">
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/white"
+            android:text="Contact us"
+            android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:text="Contact us" />
+            android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 </LinearLayout>
