@@ -14,23 +14,23 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.knowledgehub.databinding.ActivityMainBinding
 import com.example.knowledgehub.ui.theme.KnowledgeHubTheme
 
 class MainActivity : ComponentActivity() {
+
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
-        val btnLetgo = findViewById<Button>(R.id.btnLetgo)
-        val cardContanct = findViewById<CardView>(R.id.cardContact)
-
-        btnLetgo.setOnClickListener {
+        binding.btnLetgo.setOnClickListener {
             //by clicking on it going to second screen
             val intent = Intent(applicationContext, MainActivity2::class.java)
             startActivity(intent)
         }
-
-        cardContanct.setOnClickListener {
+        binding.cardContact.setOnClickListener {
             //redirects to our instagram page
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse("https://www.instagram.com")

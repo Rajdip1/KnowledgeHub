@@ -14,25 +14,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.knowledgehub.databinding.ActivityMain2Binding
 import com.example.knowledgehub.ui.theme.KnowledgeHubTheme
 
 class MainActivity2 : ComponentActivity() {
+
+    lateinit var binding: ActivityMain2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityMain2Binding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(binding.root)
 
-        val layout = findViewById<LinearLayout>(R.id.LinearLayout)
-        val layout1 = findViewById<LinearLayout>(R.id.LinearLayout1)
-        val layout2 = findViewById<LinearLayout>(R.id.LinearLayout2)
-        val cardAndroid = findViewById<CardView>(R.id.cardAndroid)
-        val cardIos = findViewById<CardView>(R.id.cardIos)
-        val cardCybers = findViewById<CardView>(R.id.cardCybers)
-        val cardWeb = findViewById<CardView>(R.id.cardWeb)
-        val cardMl = findViewById<CardView>(R.id.cardMl)
-        val cardDatas = findViewById<CardView>(R.id.cardDatas)
-
-        cardAndroid.setOnClickListener {
-
+        binding.cardAndroid.setOnClickListener {
             Toast.makeText(applicationContext, "Android skills", Toast.LENGTH_SHORT).show()
 
             //redirects to android skills guide
@@ -40,8 +33,7 @@ class MainActivity2 : ComponentActivity() {
             startActivity(intent)
         }
 
-        cardIos.setOnClickListener {
-
+        binding.cardIos.setOnClickListener {
             Toast.makeText(applicationContext,"iOS skills", Toast.LENGTH_SHORT).show()
 
             //redirects to ios skills guide
@@ -49,8 +41,7 @@ class MainActivity2 : ComponentActivity() {
             startActivity(intent)
         }
 
-        cardCybers.setOnClickListener {
-
+        binding.cardCybers.setOnClickListener {
             Toast.makeText(applicationContext, "Cyber Security skills", Toast.LENGTH_SHORT ).show()
 
             //redirects to cyber security skills guide
@@ -58,8 +49,7 @@ class MainActivity2 : ComponentActivity() {
             startActivity(intent)
         }
 
-        cardWeb.setOnClickListener {
-
+        binding.cardWeb.setOnClickListener {
             Toast.makeText(applicationContext, "Web Dev Skills", Toast.LENGTH_SHORT).show()
 
             //redirects to web dev skills guide
@@ -67,8 +57,7 @@ class MainActivity2 : ComponentActivity() {
             startActivity(intent)
         }
 
-        cardMl.setOnClickListener {
-
+        binding.cardMl.setOnClickListener {
             Toast.makeText(applicationContext,"ML skills",Toast.LENGTH_SHORT).show()
 
             //redirects to machine learning guide
@@ -76,8 +65,7 @@ class MainActivity2 : ComponentActivity() {
             startActivity(intent)
         }
 
-        cardDatas.setOnClickListener {
-
+        binding.cardDatas.setOnClickListener {
             Toast.makeText(applicationContext,"Data Science skills", Toast.LENGTH_SHORT).show()
 
             //redirects to data science skills guide
