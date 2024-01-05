@@ -7,4 +7,8 @@
     <string name="title_activity_main6">MainActivity6</string>
     <string name="title_activity_main7">MainActivity7</string>
     <string name="title_activity_main8">MainActivity8</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_kotlin_web_view">KotlinWebView</string>
+    <string name="title_activity_java_web_view">JavaWebViewActivity</string>
+    <string name="title_activity_git_hub">GitHubActivity</string>
 </resources>
